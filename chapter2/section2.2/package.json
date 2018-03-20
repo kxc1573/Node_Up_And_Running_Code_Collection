@@ -1,0 +1,15 @@
+{
+  "name": "NodeTwitterSample",
+  "version": "1.0.0",
+  "description": "a node twitter sample",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kxc1573",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "~1.18.2",
+    "express": "~4.15.5"
+  },
+}

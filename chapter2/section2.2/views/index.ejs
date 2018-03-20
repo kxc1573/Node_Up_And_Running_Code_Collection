@@ -1,0 +1,7 @@
+<!--  展示tweet 和让用户提交新tweet的index模板 -->
+
+<form action="/send" method="POST">
+    <input type="text" length="140" name="tweet">
+    <input type="submit" value="Tweet">
+</form>
+<%- partial('partials/chirp', tweets) %> 

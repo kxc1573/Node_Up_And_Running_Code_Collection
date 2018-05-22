@@ -14,3 +14,6 @@ Node即学即用（郑达韡 译）一书中示例代码集合
     * [4.1 Events](chapter4/section4.1)
     * [4.2 HTTP](chapter4/section4.2)
     * [4.3 I/O](chapter4/section4.3)
+* [第五章 工具类API](chapter5)
+    * [5.2 加密](chapter5/section5.2)
+    

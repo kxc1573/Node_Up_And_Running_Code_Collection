@@ -1,2 +1,16 @@
 1. CouchDB提供了JavaScript环境下基于MVCC（multi-version concurrency control多版本并发控制）的文档存储。在CouchDB里面添加或修改文档（记录）时，整个数据集都会保存到存储上，并且把老版本标记为过去时的。改记录的老版本内容依然会被整合到最新的版本里面去。每当创建了一个完整的新版本时，都会写入到连续的内存中，以便于更快地读取，由此保证“最终一致性”。
 2. 使用CouchDB的一大优点是：它的API都是REST方式的HTTP接口，因此不需要额外的模块。但使用node-couchdb包会更简单些（npm install felix-couchdb）
+
+3. Redis是基于内存的key-value存储，并具备了持久化功能。Redis在性能和扩展性要求很高的情况下会被使用。一般会被用作从关系型数据库（如MySQL）中读取数据的缓存（还有Memcache），但它除了key-value存储能力还有很多其他功能：可供网络访问的共享内存、非阻塞的事件总线、订阅发布功能。
+4. Redis支持密码验证，但不支持用户管理功能。
+   要添加密码，需要编辑Redis的配置文件，增加一句命令：
+    "requirepass hidengoseke"
+    即要求输入密码"hidengoseke"才能访问
+   验证时，初始化client之后，需要如下操作：
+    "client.auth('hidengoseke');"
+5. Redis可以在配置文件中使用“rename-command”命令将Redis命令改名：
+    # Change CONFIG command to something obscure
+    rename-command CONFIG 123455asdfsafsdgsgsaa233r2ssadfsdaf
+    # Clear CONFIG command, so no one can use it
+    reanme-command CONFIG ''
+

@@ -1,0 +1,5 @@
+1. MySQL成为开源世界的主力军的原因：它免费提供了与大型商用数据库一样的众多功能.
+2. Node访问MySQL有两种方式：使用NodeDB（db-mysql）、使用Sequelize（一个对象关系映射[ORM])
+	npm install -g db-mysql
+	npm install -g sequelize
+  Sequelize是基于监听事件驱动的架构，而其他地方采用回调函数驱动的架构。

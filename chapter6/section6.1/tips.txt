@@ -14,3 +14,6 @@
     # Clear CONFIG command, so no one can use it
     reanme-command CONFIG ''
 
+6. Mongo提供了JavaScript环境下的BSON对象存储（一种JSON的二进制变种），因此从Node区读写数据都非常高效；Mongo把传入的数据保存在内存里，因此很适合高并发写操作的情况。
+7. Node访问MongoDB可以通过以下两种方式：原生驱动mongodb、第三方库Mongoose。
+	前者的好处是可以用来精准地控制MongoDB连接的操作；后者优势在于Mongoose是一个表达更加清楚的环境，让模型和架构更加直观，因为它使用了人可读的的结构描述，提供了简洁的数据库交互接口。

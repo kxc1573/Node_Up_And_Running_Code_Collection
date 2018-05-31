@@ -1,0 +1,2 @@
+1. CouchDB提供了JavaScript环境下基于MVCC（multi-version concurrency control多版本并发控制）的文档存储。在CouchDB里面添加或修改文档（记录）时，整个数据集都会保存到存储上，并且把老版本标记为过去时的。改记录的老版本内容依然会被整合到最新的版本里面去。每当创建了一个完整的新版本时，都会写入到连续的内存中，以便于更快地读取，由此保证“最终一致性”。
+2. 使用CouchDB的一大优点是：它的API都是REST方式的HTTP接口，因此不需要额外的模块。但使用node-couchdb包会更简单些（npm install felix-couchdb）

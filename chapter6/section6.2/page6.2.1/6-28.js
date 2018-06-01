@@ -16,7 +16,7 @@ var Author = db.define('Author', {
 
 // Sequelize是基于监听事件驱动的架构，而其他地方采用回调函数驱动的架构。
 Author.sync().on('success', function () {
-	console.log('Author table was created.')
+	console.log('Author table was created.');
 }).on('failure', function (err) {
-	console.log('Unable to create author table.')
-})
+	console.log('Unable to create author table.');
+});

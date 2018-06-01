@@ -22,7 +22,7 @@ var connectParams = {
 	'user': 'dev',
 	'password': 'dev',
 	'database': 'upandrunning'
-}
+};
 
 var db = new mysql.Database(connectParams);
 
@@ -89,5 +89,5 @@ db.connect(function (error) {
 		if (err) {
 			console.log('Error on query: ' + err);
 		} else console.log(rows);
-	})
+	});
 });

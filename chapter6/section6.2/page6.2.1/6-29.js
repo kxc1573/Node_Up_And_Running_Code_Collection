@@ -21,7 +21,7 @@ var Author = db.define('Author', {
 
 var Book = db.define('Book', {
 	name: Sequelize.STRING
-})
+});
 
 // 多对多
 Author.hasMany(Book);

@@ -1,5 +1,12 @@
+RDBMS即关系型数据库管理系统（Relational Database Management System)
+
 1. MySQL成为开源世界的主力军的原因：它免费提供了与大型商用数据库一样的众多功能.
 2. Node访问MySQL有两种方式：使用NodeDB（db-mysql）、使用Sequelize（一个对象关系映射[ORM])
-	npm install -g db-mysql
-	npm install -g sequelize
-  Sequelize是基于监听事件驱动的架构，而其他地方采用回调函数驱动的架构。
+    npm install -g db-mysql
+    npm install -g sequelize
+  Sequelize是基于监听事件驱动的架构，而其他库采用回调函数驱动的架构，但都是链式调用方法。
+3. PostgreSQL是面向对象的RDBMS
+    npm install -g pg
+  使用PostgreSQL的时候，需要直接编写SQL查询语句。
+4. 编写SQL查询语句时，如果把数据值通过字符串连接操作扔在代码里，要小心预防SQL注入攻击。
+使用参数形式的查询是一种避免SQL注入攻击的方式，MySQL使用问号作为参数值替换标记，而PostgreSQL使用的是序号参数。

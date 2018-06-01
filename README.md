@@ -28,3 +28,6 @@ Node即学即用（郑达韡 译）一书中示例代码集合
         * [6.2.2 PostgreSQL](chapter6/section6.2/page6.2.2)
     * [6.3 连接池](chapter6/section6.3)
     * [6.4 消息队列协议](chapter6/section6.4)
+* [第七章 重要的外部模块](chapter7)
+    * [7.1 Express](chapter7/section7.1)
+    * [7.2 Socket.IO](chapter7/section7.2)

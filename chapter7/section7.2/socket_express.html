@@ -1,0 +1,13 @@
+<!-- Socket.IO绑定到Express应用上：客户端代码 -->
+<script src="/socket.io/socket.io.js"></script>
+<script>
+    var socket = io.connect('http://localhost:8080');
+    socket.on('news', function(data) {
+        document.write('<h1>' + data.title + '</h1>');
+        document.write('<p>' + data.contents + '</p>');
+        if (data.allowResponse) {
+            // 发起scoop事件
+            socket.emit('scoop', { contents: 'News data received by client.'});
+        }
+    });
+</script>

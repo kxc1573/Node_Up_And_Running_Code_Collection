@@ -31,3 +31,4 @@ Node即学即用（郑达韡 译）一书中示例代码集合
 * [第七章 重要的外部模块](chapter7)
     * [7.1 Express](chapter7/section7.1)
     * [7.2 Socket.IO](chapter7/section7.2)
+    * express4代码完全不同了，很难调试。
